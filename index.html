@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>THUHCSI</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <!-- animation css -->
+  <link rel="stylesheet" href="plugins/animate/animate.css">
+  <!-- aos -->
+  <link rel="stylesheet" href="plugins/aos/aos.css">
+  <!-- venobox popup -->
+  <link rel="stylesheet" href="plugins/venobox/venobox.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
+  <link rel="icon" href="images/favicon.jpg" type="image/x-icon">
+
+</head>
+
+<body>
+  <!-- preloader start --
+  <div class="preloader">
+    <img src="images/hcsi-pre.gif" alt="preloader" width="500px">
+  </div>
+  <!-- preloader end -->
+
+<!-- header -->
+<header class="fixed-top header">
+  <!-- navbar -->
+  <div class="navigation w-100">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark p-0">
+        <!-- logo -->
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" width="250"></a>
+        <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- menu -->
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="navbar-nav ml-auto text-center">
+            <!-- about -->
+            <li class="nav-item dropdown view @@about">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarAbout" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarAbout">
+                <a class="dropdown-item" href="labintro.html">Introduction</a>
+                <a class="dropdown-item" href="researches.html">Research Areas</a>
+                <a class="dropdown-item" href="collaborators.html">Collaborators</a>
+              </div>
+            </li>
+            <!-- members -->
+            <li class="nav-item dropdown view @@members">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarMembers" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Members
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarMembers">
+                <a class="dropdown-item" href="zywu.html">Director</a>
+                <a class="dropdown-item" href="members.html">Students</a>
+                <a class="dropdown-item" href="alumni.html">Alumni</a>
+                <a class="dropdown-item" href="honors.html">Honors</a>
+              </div>
+            </li>
+            <!-- news -->
+            <li class="nav-item @@news">
+              <a class="nav-link" href="news.html">News</a>
+            </li>
+            <!-- research -->
+            <li class="nav-item dropdown view @@research">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarResearch" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Research
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarResearch">
+                <a class="dropdown-item" href="publications.html">Publications</a>
+                <a class="dropdown-item" href="patents.html">Patents</a>
+                <a class="dropdown-item" href="projects.html">Projects</a>
+              </div>
+            </li>
+            <!-- awards -->
+            <li class="nav-item @@awards">
+              <a class="nav-link" href="awards.html">Awards</a>
+            </li>
+            <!-- demos -->
+            <li class="nav-item @@demos">
+              <a class="nav-link" href="demos.html">Demos</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /menu -->
+      </nav>
+    </div>
+  </div>
+  <!-- /navbar -->
+</header>
+<!-- /header -->
+
+<!-- hero slider -->
+<section class="hero-section overlay bg-cover" data-background="images/labinfo/hcsi-1-sm.jpg">
+  <div class="container">
+    <div class="hero-slider">
+      <!-- slider item -->
+      <div class="hero-slider-item">
+        <div class="row">
+          <div class="col-md-5">
+            <h1 class="text-lightblue" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".1">
+              Welcome to THUHCSI
+            </h1>
+            <p class="text-white mb-4" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".4">
+              Human-Computer Speech Interaction Lab at Tsinghua University (THUHCSI) targets artificial intelligence (AI) technologies for smart voice user interface (VUI).
+            </p>
+            <a href="labintro.html" class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".7">
+              More About Us
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- slider item -->
+      <div class="hero-slider-item">
+        <div class="row">
+          <div class="col-md-9">
+            <h1 class="text-lightblue" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".1">
+              Headlines
+            </h1>
+            <div data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".4" style="line-height:1">
+              <ul class="list-inline mb-2">
+                <li class="list-inline-item text-white"><i class="ti-calendar mr-1 text-white"></i>May-2022</li>
+              </ul>
+              <a>
+                <h6 class="card-title text-white" style="text-indent:2em;">11 papers published on ICASSP 2022</h6>
+              </a>
+              <ul class="list-inline mb-2">
+                <li class="list-inline-item text-white"><i class="ti-calendar mr-1 text-white"></i>December-2021</li>
+              </ul>
+              <a>
+                <h6 class="card-title text-white" style="text-indent:2em;">3 papers published on IEEE TASLP</h6>
+              </a>
+              <ul class="list-inline mb-2">
+                <li class="list-inline-item text-white"><i class="ti-calendar mr-1 text-white"></i>November-2021</li>
+              </ul>
+              <a>
+                <h6 class="card-title text-white" style="text-indent:2em;">Paper on learning from noisy augmented datasets for SLU published on EMNLP 2021</h6>
+              </a>
+              <ul class="list-inline mb-2">
+                <li class="list-inline-item text-white"><i class="ti-calendar mr-1 text-white"></i>September-2021</li>
+              </ul>
+              <a>
+                <h6 class="card-title text-white" style="text-indent:2em;">4 papers published on INTERSPEECH 2021</h6>
+              </a>
+            </div>
+            <a href="news.html" class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".7">
+              More
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- slider item -->
+      <div class="hero-slider-item">
+        <div class="row">
+          <div class="col-md-8">
+            <h1 class="text-lightblue" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".1">
+              Headlines
+            </h1>
+            <div data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".4" style="line-height:1">
+              <ul class="list-inline mb-2">
+                <li class="list-inline-item text-white"><i class="ti-calendar mr-1 text-white"></i>June-2021</li>
+              </ul>
+              <a>
+                <h6 class="card-title text-white" style="text-indent:2em;">7 papers published on ICASSP 2021</h6>
+              </a>
+              <ul class="list-inline mb-2">
+                <li class="list-inline-item text-white"><i class="ti-calendar mr-1 text-white"></i>May-2021</li>
+              </ul>
+              <a>
+                <h6 class="card-title text-white" style="text-indent:2em;">Paper on audio-visual corrective feedback for CAPT published on CHI 2021</h6>
+              </a>
+              <ul class="list-inline mb-2">
+                <li class="list-inline-item text-white"><i class="ti-calendar mr-1 text-white"></i>February-2021</li>
+              </ul>
+              <a>
+                <h6 class="card-title text-white" style="text-indent:2em;">Paper on emotion inference from internet voice data published on AAAI 2021</h6>
+              </a>
+              <ul class="list-inline mb-2">
+                <li class="list-inline-item text-white"><i class="ti-calendar mr-1 text-white"></i>October-2020</li>
+              </ul>
+              <a>
+                <h6 class="card-title text-white" style="text-indent:2em;">Project on disentangled speech attributes learning awarded by NSFC</h6>
+              </a>
+            </div>
+            <a href="news.html" class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".7">
+              More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /hero slider -->
+
+<!-- labintro & researches -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <!-- labintro -->
+      <div class="col-md-8 order-1 mb-4 mb-md-0">
+        <!-- title -->
+        <div class="d-flex align-items-center section-title justify-content-between">
+          <h3 class="mb-0 text-nowrap mr-3">About Us</h3>
+          <div class="border-top w-100 border-primary"></div>
+          <div>
+            <a href="labintro.html" class="btn btn-xs btn-primary-outline ml-sm-3">More</a>
+          </div>
+        </div>
+        <!-- introduction -->
+        <p>Human-Computer Speech Interaction Lab at Tsinghua University (THUHCSI) targets artificial intelligence (AI) technologies for smart voice user interface (VUI). We specializes in speech synthesis, speech recognition, speaker recognition, speech enhancement, affective computing, natural launguage understanding and generation, multimodal multimedia information processing.</p>
+        <p>THUHCSI jointly establishes "Tsinghua-CUHK Joint Research Center for Media Sciences, Technologies and Systems" with Faculty of Engineering of The Chinese University of Hong Kong since 2006. It showcases Guangdong-Hong Kong, Shenzhen-Hong Kong collaborative example in science and technology initiative promoted by Shenzhen municipal government.</p>
+      </div>
+      <!-- /labintro -->
+      <!-- researches -->
+      <div class="col-md-4 order-2">
+        <!-- title -->
+        <div class="d-flex align-items-center section-title justify-content-between">
+          <h3 class="mb-0 text-nowrap mr-3">Research Areas</h3>
+          <div class="border-top w-100 border-primary"></div>
+          <div>
+            <a href="researches.html" class="btn btn-xs btn-primary-outline ml-sm-3">More</a>
+          </div>
+        </div>
+        <!-- researches -->
+        <ul class="list-styled mb-5">
+          <li>Speech Synthesis</li>
+          <li>Speech Recognition</li>
+          <li>Speaker Recognition</li>
+          <li>Speech Signal Processing</li>
+          <li>Affective Computing</li>
+          <li>Multimodal Speech and Language Processing</li>
+        </ul>
+      </div>
+      <!-- /researches -->
+    </div>
+  </div>
+</section>
+<!-- /labintro & researches -->
+
+<!-- funfacts -->
+<section class="section-sm bg-primary">
+  <div class="container">
+    <div class="row">
+      <!-- funfacts item -->
+      <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+        <div class="text-center">
+          <h2 class="text-white"><span class="count" data-count="40">0</span> +</h2>
+          <h5 class="text-white">Students</h5>
+        </div>
+      </div>
+      <!-- funfacts item -->
+      <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+        <div class="text-center">
+          <h2 class="text-white"><span class="count" data-count="150">0</span> +</h2>
+          <h5 class="text-white">Publications</h5>
+        </div>
+      </div>
+      <!-- funfacts item -->
+      <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+        <div class="text-center">
+          <h2 class="text-white"><span class="count" data-count="30">0</span> +</h2>
+          <h5 class="text-white">Patents/Awards</h5>
+        </div>
+      </div>
+      <!-- funfacts item -->
+      <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+        <div class="text-center">
+          <h2 class="text-white"><span class="count" data-count="15">0</span> +</h2>
+          <h5 class="text-white">Collaborators</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /funfacts -->
+
+<!-- publications & demos -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <!-- awards & demos -->
+      <div class="col-md-4 order-1 order-md-2 mb-5 mb-md-0">
+        <!-- awards -->
+        <div>
+          <div class="d-flex align-items-center section-title justify-content-between">
+            <h3 class="mb-0 text-nowrap mr-3">Major Awards</h3>
+            <div class="border-top w-100 border-primary"></div>
+            <div>
+              <a href="awards.html" class="btn btn-xs btn-primary-outline ml-sm-3">More</a>
+            </div>
+          </div>
+          <ul class="list-unstyled mb-5">
+            <!-- award item -->
+            <li class="mb-3">
+              <span class="h4 d-block">2021</span>
+              Best Paper Finalists in SLT（刘良琪、户建坤）
+            </li>
+            <!-- award item -->
+            <li class="mb-3">
+              <span class="h4 d-block">2020</span>
+              Annual Teaching Excellent Award of Tsinghua University（2020年度清华大学年度教学优秀奖）
+            </li>
+            <!-- award item -->
+            <li class="mb-3">
+              <span class="h4 d-block">2018, 2019, 2020</span>
+              Outstanding / Excellent Award of Tencent AI Lab Rhino-Bird Focused Research and Visiting Scholar Program（2018、19、20年度腾讯AI Lab犀牛鸟专项研究及访问学者计划卓越奖、优秀奖）
+            </li>
+            <!-- award item -->
+            <li class="mb-3">
+              <span class="h4 d-block">2017</span>
+              First Prize in the "Spoofing Attack Task" in the GeekPwn Contest（“清晨李唐王”团队在2017年度极棒全球极客大赛“AI仿声验声攻防赛”中斩获桂冠）
+            </li>
+            <!-- award item -->
+            <li class="mb-3">
+              <span class="h4 d-block">2009, 2016</span>
+              Ministry of Education (MoE) Higher Education Outstanding Scientific Research Output Award in Technological Advancements（2009、16年度教育部科技进步奖）
+            </li>
+          </ul>
+        </div>
+        <!-- /awards-->
+        <!-- demos -->
+        <div>
+          <div class="d-flex align-items-center section-title justify-content-between">
+            <h3 class="mb-0 text-nowrap mr-3">Demos</h3>
+            <div class="border-top w-100 border-primary"></div>
+            <div>
+              <a href="demos.html" class="btn btn-xs btn-primary-outline ml-sm-3">More</a>
+            </div>
+          </div>
+          <!-- demo item -->
+          <div class="card p-0 border-primary rounded-0 hover-shadow mb-2">
+            <a href="https://thuhcsi.github.io/icassp2022-conversational-tts">
+              <img class="card-img-top rounded-0" src="images/demos/202205-ICASSP-ConversationalTTS.jpg" alt="demo">
+            </a>
+            <div class="card-body">
+              <ul class="list-inline mb-2">
+                <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>05-03-2022</li>
+                <li class="list-inline-item">ICASSP'22</li>
+              </ul>
+              <h6 class="card-title mb-0">Enhancing Speaking Styles in Conversational Text-to-Speech Synthesis with Graph-based Multi-modal Cotext Modeling</h6>
+            </div>
+          </div>
+          <!-- demo item -->
+          <div class="card p-0 border-primary rounded-0 hover-shadow mb-2">
+            <a href="https://thuhcsi.github.io/icassp2022-Transformer-S2A">
+              <img class="card-img-top rounded-0" src="images/demos/202205-ICASSP-TransformerS2A.jpg" alt="demo">
+            </a>
+            <div class="card-body">
+              <ul class="list-inline mb-2">
+                <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>05-12-2022</li>
+                <li class="list-inline-item">ICASSP'22</li>
+              </ul>
+              <h6 class="card-title mb-0">Transformer-S2A: Robust and Efficient Speech-to-Animation</h6>
+            </div>
+          </div>
+          <!-- demo item -->
+          <div class="card p-0 border-primary rounded-0 hover-shadow mb-2">
+            <a href="https://thuhcsi.github.io/SpanPSP">
+              <img class="card-img-top rounded-0" src="images/demos/202205-ICASSP-SpanPSP.jpg" alt="demo">
+            </a>
+            <div class="card-body">
+              <ul class="list-inline mb-2">
+                <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>05-13-2022</li>
+                <li class="list-inline-item">ICASSP'22</li>
+              </ul>
+              <h6 class="card-title mb-0">A Character-level Span-based Model for Mandarin Prosodic Structure Prediction</h6>
+            </div>
+          </div>
+        </div>
+        <!-- /demos -->
+      </div>
+      <!-- /awards & demos -->
+      <!-- publications -->
+      <div class="col-md-8 order-2 order-md-1">
+        <!-- title -->
+        <div class="d-flex align-items-center section-title justify-content-between">
+          <h3 class="mb-0 text-nowrap mr-3">Publications</h3>
+          <div class="border-top w-100 border-primary"></div>
+          <div>
+            <a href="publications.html" class="btn btn-xs btn-primary-outline ml-sm-3">More</a>
+          </div>
+        </div>
+        <!-- paper item -->
+        <div class="card border-0 rounded-0 bg-gray p-2 mb-2">
+          <div class="text-dark">
+            Haibin Wu, Xu Li, Andy T Liu, Zhiyong Wu, Helen Meng, Hung-Yi Lee,
+            "Improving the Adversarial Robustness for Speaker Verification by Self-supervised Learning,"
+            <i>IEEE/ACM Transactions on Audio, Speech, and Language Processing (TASLP)</i>,
+            vol. 30, pp. 202-217. IEEE, January, 2022.
+            <span class="text-lighten">(SCI, EI, THU-A)</span>
+            <a class="d-inline-block btn-round" href="https://ieeexplore.ieee.org/document/9645217">Paper</a>
+          </div>
+        </div>
+        <!-- paper item -->
+        <div class="card border-0 rounded-0 bg-gray p-2 mb-2">
+          <div class="text-dark">
+            Xixin Wu, Yuewen Cao, Hui Lu, Songxiang Liu, Disong Wang, Zhiyong Wu, Xunying Liu, Helen Meng,
+            "Speech Emotion Recognition Using Sequential Capsule Networks,"
+            <i>IEEE/ACM Transactions on Audio, Speech, and Language Processing (TASLP)</i>,
+            vol. 29, pp. 3280-3291. IEEE, October, 2021.
+            <span class="text-lighten">(SCI, EI, THU-A)</span>
+            <a class="d-inline-block btn-round" href="https://ieeexplore.ieee.org/abstract/document/9576634">Paper</a>
+          </div>
+        </div>
+        <!-- paper item -->
+        <div class="card border-0 rounded-0 bg-gray p-2 mb-2">
+          <div class="text-dark">
+            Xixin Wu, Yuewen Cao, Hui Lu, Songxiang Liu, Shiyin Kang, Zhiyong Wu, Xunying Liu, Helen Meng,
+            "Exemplar-Based Emotive Speech Synthesis,"
+            <i>IEEE/ACM Transactions on Audio, Speech, and Language Processing (TASLP)</i>,
+            vol. 29, pp. 874-886. IEEE, January, 2021.
+            <span class="text-lighten">(SCI, EI, THU-A)</span>
+            <a class="d-inline-block btn-round" href="https://ieeexplore.ieee.org/abstract/document/9328288">Paper</a>
+          </div>
+        </div>
+        <!-- paper item -->
+        <div class="card border-0 rounded-0 bg-gray p-2 mb-2">
+          <div class="text-dark">
+            Yingmei Guo, Linjun Shou, Jian Pei, Ming Gong, Mingxing Xu, Zhiyong Wu, Daxin Jiang,
+            "Learning from Multiple Noisy Augmented Data Sets for Better Cross-Lingual Spoken Language Understanding,"
+            [in] <i>Proc. 2021 Conference on Empirical Methods in Natural Language Processing (EMNLP)</i>,
+            pp. 1-12. Punta Cana, Dominican Republic, November 7-11, 2021.
+            <span class="text-lighten">(EI, THU-A)</span>
+            <a class="d-inline-block btn-round" href="https://arxiv.org/abs/2109.01583">Paper</a>
+          </div>
+        </div>
+        <!-- paper item -->
+        <div class="card border-0 rounded-0 bg-gray p-2 mb-2">
+          <div class="text-dark">
+            Yaohua Bu, Tianyi Ma, Weijun Li, Hang Zhou, Jia Jia, Shengqi Chen, Kaiyuan Xu, Dachuan Shi, Haozhe Wu, Zhihan Yang, Kun Li, Zhiyong Wu, Yuanchun Shi, Xiaobo Lu, Ziwei Liu,
+            "PTeacher: A Computer-Aided Personalized Pronunciation Training System with Exaggerated Audio-Visual Corrective Feedback,"
+            [in] <i>Proc. 2021 CHI Conference on Human Factors in Computing Systems (CHI)</i>,
+            pp. 1-14. Yokohama, Japan, May 8-13, 2021.
+            <span class="text-lighten">(EI, CCF-A)</span>
+            <a class="d-inline-block btn-round" href="https://dl.acm.org/doi/abs/10.1145/3411764.3445490">Paper</a>
+            <a class="d-inline-block btn-round" href="https://hcsi.cs.tsinghua.edu.cn/demo/CHI21-BUYAOHUA.mp4">Demo</a>
+          </div>
+        </div>
+        <!-- paper item -->
+        <div class="card border-0 rounded-0 bg-gray p-2 mb-2">
+          <div class="text-dark">
+            Suping Zhou, Jia Jia, Zhiyong Wu, Zhihan Yang, Yanfeng Wang, Wei Chen, Fanbo Meng, Shuo Huang, Jialie Shen, Xiaochuan Wang,
+            "Inferring Emotion from Large-Scale Internet Voice Data: A Semi-supervised Curriculum Augmentation based Deep Learning Approach,"
+            [in] <i>Proc. the 35th AAAI Conference on Artificial Intelligence (AAAI)</i>,
+            pp. 6039-6047. Virtual, Online, February 2-9, 2021.
+            <span class="text-lighten">(EI, CCF-A)</span>
+            <a class="d-inline-block btn-round" href="https://ojs.aaai.org/index.php/AAAI/article/view/16753">Paper</a>
+          </div>
+        </div>
+        <!-- paper item -->
+        <div class="card border-0 rounded-0 bg-gray p-2 mb-2">
+          <div class="text-dark">
+            Runnan Li, Zhiyong Wu, Jia Jia, Yaohua Bu, Sheng Zhao, Helen Meng,
+            "Towards Discriminative Representation Learning for Speech Emotion Recognition,"
+            [in] <i>Proc. International Joint Conference on Artificial Intelligence (IJCAI)</i>,
+            pp. 5060-5066. Macao, China, August 10-16, 2019.
+            <span class="text-lighten">(EI, CCF-A)</span>
+            <a class="d-inline-block btn-round" href="https://doi.org/10.24963/ijcai.2019/703">Paper</a>
+            <a class="d-inline-block btn-round" href="https://github.com/thuhcsi/IJCAI2019-DRL4SER">Code</a>
+          </div>
+        </div>
+        <!-- paper item -->
+        <div class="card border-0 rounded-0 bg-gray p-2 mb-2">
+          <div class="text-dark">
+            Yishuang Ning, Sheng He, Zhiyong Wu, Chunxiao Xing, Liangjie Zhang,
+            "A Review of Deep Learning Based Speech Synthesis,"
+            <i>Applied Sciences-Basel</i>,
+            vol. 9, no. 19, pp. 4050. MDPI, September, 2019.
+            <span class="text-lighten">(SCI)</span>
+            <a class="d-inline-block btn-round" href="https://www.mdpi.com/2076-3417/9/19/4050">Paper</a>
+          </div>
+        </div>
+        <!-- paper item -->
+        <div class="card border-0 rounded-0 bg-gray p-2 mb-2">
+          <div class="text-dark">
+            Runnan Li, Zhiyong Wu, Jia Jia, Jingbei Li, Wei Chen, Helen Meng,
+            "Inferring User Emotive State Changes in Realistic Human-Computer Conversational Dialogs,"
+            [in] <i>Proc. ACM Multimedia Conference (ACM MM)</i>,
+            pp. 136-144. Seoul, Korea, October 22-26, 2018.
+            <span class="text-lighten">(EI, CCF-A)</span>
+            <a class="d-inline-block btn-round" href="https://dl.acm.org/doi/abs/10.1145/3240508.3240575">Paper</a>
+          </div>
+        </div>
+        <!-- paper item -->
+        <div class="card border-0 rounded-0 bg-gray p-2 mb-2">
+          <div class="text-dark">
+            Kun Li, Shaoguang Mao, Xu Li, Zhiyong Wu, Helen Meng,
+            "Automatic Lexical Stress and Pitch Accent Detection for L2 English Speech using Multi-Distribution Deep Neural Networks,"
+            <i>Speech Communication (Speech Com)</i>,
+            vol. 96, pp. 28-36. Elsevier, February, 2018.
+            <span class="text-lighten">(SCI, EI, CCF-B)</span>
+            <a class="d-inline-block btn-round" href="https://www.sciencedirect.com/science/article/pii/S0167639315300637">Paper</a>
+          </div>
+        </div>
+        <!-- paper item -->
+        <div class="card border-0 rounded-0 bg-gray p-2 mb-2">
+          <div class="text-dark">
+            Yishuang Ning, Jia Jia, Zhiyong Wu, Runnan Li, Yongsheng An, Yanfeng Wang, Helen Meng,
+            "Multi-task Deep Learning for User Intention Understanding in Speech Interaction Systems,"
+            [in] <i>Proc. the 31th AAAI Conference on Artificial Intelligence (AAAI)</i>,
+            pp. 161-167. San Francisco, USA, February 4-9, 2017.
+            <span class="text-lighten">(EI, CCF-A)</span>
+            <a class="d-inline-block btn-round" href="https://ojs.aaai.org/index.php/AAAI/article/view/10493">Paper</a>
+          </div>
+        </div>
+        <!-- paper item -->
+        <div class="card border-0 rounded-0 bg-gray p-2 mb-2">
+          <div class="text-dark">
+            Zhiyong Wu, Yishuang Ning, Xiao Zang, Jia Jia, Fanbo Meng, Helen Meng, Lianhong Cai,
+            "Generating Emphatic Speech with Hidden Markov Model for Expressive Speech Synthesis,"
+            <i>Multimedia Tools and Applications (MTA)</i>,
+            vol. 74, no. 22, pp. 9909-9925. Springer, July, 2015.
+            <span class="text-lighten">(SCI, EI, CCF-C)</span>
+            <a class="d-inline-block btn-round" href="https://link.springer.com/article/10.1007/s11042-014-2164-2">Paper</a>
+          </div>
+        </div>
+        <!-- paper item -->
+        <div class="card border-0 rounded-0 bg-gray p-2 mb-2">
+          <div class="text-dark">
+            Zhiyong Wu, Kai Zhao, Xixin Wu, Xinyu Lan, Helen Meng,
+            "Acoustic to Articulatory Mapping with Deep Neural Network,"
+            <i>Multimedia Tools and Applications (MTA)</i>,
+            vol. 74, no. 22, pp. 9889-9907. Springer, August, 2015.
+            <span class="text-lighten">(SCI, EI, CCF-C)</span>
+            <a class="d-inline-block btn-round" href="https://link.springer.com/article/10.1007/s11042-014-2183-z">Paper</a>
+          </div>
+        </div>
+        <!-- paper item -->
+        <div class="card border-0 rounded-0 bg-gray p-2 mb-2">
+          <div class="text-dark">
+            Qi Lyu, Zhiyong Wu, Jun Zhu,
+            "Polyphonic Music Modelling with LSTM-RTRBM,"
+            [in] <i>Proc. ACM Multimedia Conference (ACM MM)</i>,
+            pp. 991-994. Brisbane, Australia, October 26-30, 2015.
+            <span class="text-lighten">(EI, CCF-A)</span>
+            <a class="d-inline-block btn-round" href="https://dl.acm.org/doi/abs/10.1145/2733373.2806383">Paper</a>
+          </div>
+        </div>
+        <!-- paper item -->
+        <div class="card border-0 rounded-0 bg-gray p-2 mb-2">
+          <div class="text-dark">
+            Qi Lyu, Zhiyong Wu, Jun Zhu, Helen Meng,
+            "Modelling High-dimensional Sequences with LSTM-RTRBM: Application to Polyphonic Music Generation,"
+            [in] <i>Proc. International Joint Conference on Artificial Intelligence (IJCAI)</i>,
+            pp. 4138-4139. Buenos Aires, Argentina, July 25-31, 2015.
+            <span class="text-lighten">(EI, CCF-A)</span>
+            <a class="d-inline-block btn-round" href="https://dl.acm.org/doi/abs/10.5555/2832747.2832827">Paper</a>
+          </div>
+        </div>
+        <!-- paper item -->
+        <div class="card border-0 rounded-0 bg-gray p-2 mb-2">
+          <div class="text-dark">
+            Fanbo Meng, Zhiyong Wu, Jia Jia, Helen Meng, Lianhong Cai,
+            "Synthesizing English Emphatic Speech for Multimodal Corrective Feedback in Computer-Aided Pronunciation Training,"
+            <i>Multimedia Tools and Applications (MTA)</i>,
+            vol. 73, no. 1, pp. 463-489. Springer, September, 2014.
+            <span class="text-lighten">(SCI, EI, CCF-C)</span>
+            <a class="d-inline-block btn-round" href="https://link.springer.com/article/10.1007/s11042-013-1601-y">Paper</a>
+          </div>
+        </div>
+        <!-- paper item -->
+        <div class="card border-0 rounded-0 bg-gray p-2 mb-2">
+          <div class="text-dark">
+            Jia Jia, Zhiyong Wu, Shen Zhang, Helen Meng, Lianhong Cai,
+            "Head and Facial Gestures Synthesis using PAD Model for an Expressive Talking Avatar,"
+            <i>Multimedia Tools and Applications (MTA)</i>,
+            vol. 73, no. 1, pp. 439-461. Springer, September, 2014.
+            <span class="text-lighten">(SCI, EI, CCF-C)</span>
+            <a class="d-inline-block btn-round" href="https://link.springer.com/article/10.1007/s11042-013-1604-8">Paper</a>
+          </div>
+        </div>
+        <!-- paper item -->
+        <div class="card border-0 rounded-0 bg-gray p-2 mb-2">
+          <div class="text-dark">
+            Zhiyong Wu, Helen Meng, Hongwu Yang, Lianhong Cai,
+            "Modeling the Expressivity of Input Text Semantics for Chinese Text-to-Speech Synthesis in a Spoken Dialog System,"
+            <i>IEEE Transaction on Audio, Speech and Language Processing (TASLP)</i>,
+            vol. 17, no. 8, pp. 1567-1577. IEEE, November, 2009.
+            <span class="text-lighten">(SCI, EI, THU-A)</span>
+            <a class="d-inline-block btn-round" href="https://ieeexplore.ieee.org/abstract/document/4926212">Paper</a>
+          </div>
+        </div>
+      </div>
+      <!-- /publications -->
+    </div>
+  </div>
+</section>
+<!-- /publications & demos -->
+
+<!-- footer -->
+<footer>
+  <!-- footer content -->
+  <div class="footer bg-footer section border-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-5 mb-5 mb-sm-0 text-center">
+          <!-- logo -->
+          <a class="logo-footer" href="index.html"><img class="img-fluid mb-0" src="images/QRCode.png" alt="QR code"></a>
+        </div>
+        <!-- contact -->
+        <div class="col-lg-8 col-md-8 col-sm-7 mb-0">
+          <h4 class="text-lightblue mb-2">Location</h4>
+          <p class="text-white mb-4">Room 1701, Information Building, Tsinghua Campus, The University Town, Shenzhen 518055, China <br>
+            深圳市南山区西丽大学城清华校区信息大楼1701
+          </p>
+          <h4 class="text-lightblue mb-2">Follow Us</h4>
+          <p class="text-white mb-0">Scan QR code to follow us on WeChat <br>
+            扫码关注实验室微信公众号
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- copyright -->
+  <div class="copyright py-4 bg-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7 text-sm-left text-center">
+          <p class="mb-0">Copyright &copy;
+            <script>
+              var CurrentYear = new Date().getFullYear()
+              document.write(CurrentYear)
+            </script>,
+            im1eon @ thuhcsi</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<!-- 
+  template from:
+  https://demo.themefisher.com/educenter/index.html
+-->
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- aos -->
+<script src="plugins/aos/aos.js"></script>
+<!-- venobox popup -->
+<script src="plugins/venobox/venobox.min.js"></script>
+<!-- filter -->
+<script src="plugins/filterizr/jquery.filterizr.min.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
