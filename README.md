@@ -1,1 +1,1 @@
-Please visit: https://polyunlp.github.io/
+Visit: https://polyunlp.github.io/
