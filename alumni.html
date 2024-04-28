@@ -1,358 +1,99 @@
 <!DOCTYPE html>
-<html lang="zxx">
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>THUHCSI</title>
-
-  <!-- mobile responsive meta -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-  <!-- ** Plugins Needed for the Project ** -->
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
-  <!-- slick slider -->
-  <link rel="stylesheet" href="plugins/slick/slick.css">
-  <!-- themefy-icon -->
-  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
-  <!-- animation css -->
-  <link rel="stylesheet" href="plugins/animate/animate.css">
-  <!-- aos -->
-  <link rel="stylesheet" href="plugins/aos/aos.css">
-  <!-- venobox popup -->
-  <link rel="stylesheet" href="plugins/venobox/venobox.css">
-
-  <!-- Main Stylesheet -->
-  <link href="css/style.css" rel="stylesheet">
-
-  <!--Favicon-->
-  <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
-  <link rel="icon" href="images/favicon.jpg" type="image/x-icon">
-
+    <meta charset="UTF-8">
+    <title>NLP Group @ PolyU</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="polyu.png">
 </head>
-
 <body>
-  <!-- preloader start --
-  <div class="preloader">
-    <img src="images/hcsi-pre.gif" alt="preloader" width="500px">
-  </div>
-  <!-- preloader end -->
-
-<!-- header -->
-<header class="fixed-top header">
-  <!-- navbar -->
-  <div class="navigation w-100">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-dark p-0">
-        <!-- logo -->
-        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" width="250"></a>
-        <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- menu -->
-        <div class="collapse navbar-collapse" id="navigation">
-          <ul class="navbar-nav ml-auto text-center">
-            <!-- about -->
-            <li class="nav-item dropdown view @@about">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarAbout" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                About
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarAbout">
-                <a class="dropdown-item" href="labintro.html">Introduction</a>
-                <a class="dropdown-item" href="researches.html">Research Areas</a>
-                <a class="dropdown-item" href="collaborators.html">Collaborators</a>
-              </div>
-            </li>
-            <!-- members -->
-            <li class="nav-item dropdown view active">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarMembers" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Members
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarMembers">
-                <a class="dropdown-item" href="zywu.html">Director</a>
-                <a class="dropdown-item" href="members.html">Students</a>
-                <a class="dropdown-item active" href="alumni.html">Alumni</a>
-                <a class="dropdown-item" href="honors.html">Honors</a>
-              </div>
-            </li>
-            <!-- news -->
-            <li class="nav-item @@news">
-              <a class="nav-link" href="news.html">News</a>
-            </li>
-            <!-- research -->
-            <li class="nav-item dropdown view @@research">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarResearch" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Research
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarResearch">
-                <a class="dropdown-item" href="publications.html">Publications</a>
-                <a class="dropdown-item" href="patents.html">Patents</a>
-                <a class="dropdown-item" href="projects.html">Projects</a>
-              </div>
-            </li>
-            <!-- awards -->
-            <li class="nav-item @@awards">
-              <a class="nav-link" href="awards.html">Awards</a>
-            </li>
-            <!-- demos -->
-            <li class="nav-item @@demos">
-              <a class="nav-link" href="demos.html">Demos</a>
-            </li>
-          </ul>
+    <header>
+        <div class="header-content">
+            <img src="logo1.png" alt="PolyU NLP" class="logo">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="home">Home</a></li>
+                    <li><a href="publications">Publications</a></li>
+                    <li><a href="projects">Projects</a></li>
+                    <li><a href="people">People</a></li>
+                    <li><a href="alumni" class="active">Alumni</a></li>
+                </ul>
+            </nav>
         </div>
-        <!-- /menu -->
-      </nav>
-    </div>
-  </div>
-  <!-- /navbar -->
-</header>
-<!-- /header -->
+    </header>
+    
+    <section class="welcome-banner">
+        <h2>Alumni</h2>
+    </section>
 
-<!-- page title -->
-<section class="page-title-section overlay" data-background="images/backgrounds/hcsi-gather.jpg">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8">
-        <ul class="list-inline custom-breadcrumb">
-          <li class="list-inline-item"><p class="h2 text-primary font-secondary">Alumni</p></li>
-          <li class="list-inline-item text-white h3 font-secondary"></li>
-        </ul>
-        <p class="text-lighten">&nbsp;</p>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /page title -->
-
-<style>
-table{
-    width: 100%;
-    border-collapse: collapse;
-}
-
-table caption{
-    font-size: 2em;
-    font-weight: bold;
-    margin: 1em 0;
-}
-
-th,td{
-    border-bottom: 0px solid #999;
-    text-align: center;
-    padding: 20px 0;
-    text-align: center; 
-    vertical-align: middle;
-}
-
-table thead tr{
-    background-color: #034184;
-    color: #fff;
-}
-
-table tbody tr:hover{
-    background-color: #ccc;
-}
-
-table tbody tr td:first-child{
-    color: #5c5c77;
-}
-
-table tfoot tr td{
-    text-align: right;
-    padding-right: 20px;
-}
-</style>
-
-<!-- alumni -->
-<section class="section">
-    <div class="container">
-        <table>
-            <thead>
-                <th>年级</th>
-                <th colspan="4">姓名</th>
-            </thead>
-            <tr class="border-bottom">
-                <td width="20%">2009级</td>
-                <td width="20%">沈彬彬</td>
-                <td width="20%">庞辉</td>
-                <td width="20%"></td>
-                <td width="20%"></td>
-            </tr>
-            <tr class="border-bottom">
-                <td>2010级</td>
-                <td>江建博</td>
-                <td>姜涛</td>
-                <td>李春荣</td>
-                <td></td>
-            </tr>
-            <tr class="border-bottom">
-                <td>2011级</td>
-                <td>王欣</td>
-                <td>郑鑫</td>
-                <td>赵凯</td>
-                <td>赵玉东</td>
-            </tr>
-            <tr class="border-bottom">
-                <td>2012级</td>
-                <td>吴锡欣</td>
-                <td>刘朋</td>
-                <td>臧潇</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td rowspan="2">2013级</td>
-                <td class="nb">宁义双（博士）</td>
-                <td>于泉杰</td>
-                <td>兰新宇</td>
-                <td>吕祺</td>
-            </tr>
-            <tr class="border-bottom">
-                <td>姬少铭</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td rowspan="2">2014级</td>
-                <td>唐耀东</td>
-                <td>李旭</td>
-                <td>李林川</td>
-                <td>李心星</td>
-            </tr>
-            <tr class="border-bottom">
-                <td>魏乐业</td>
-                <td>姜奕祺</td>
-                <td>唐松</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td rowspan="2">2015级</td>
-                <td>李润楠（博士）</td>
-                <td>黎静北</td>
-                <td>黄雨晨</td>
-                <td>朱紫薇</td>
-            </tr>
-            <tr class="border-bottom">
-                <td>马习</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td rowspan="2">2016级</td>
-                <td>王木</td>
-                <td>毛绍光</td>
-                <td>杨帅</td>
-                <td>杜耀</td>
-            </tr>
-            <tr class="border-bottom">
-                <td>张晓桐</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td rowspan="2">2017级</td>
-                <td>代东洋</td>
-                <td>卢辉</td>
-                <td>刘良琪</td>
-                <td>张坤</td>
-            </tr>
-            <tr class="border-bottom">
-                <td>户建坤</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td rowspan="2">2018级</td>
-                <td>梁翔宇</td>
-                <td>苏斌</td>
-                <td>蔡雄</td>
-                <td>黄晖榕</td>
-            </tr>
-            <tr class="border-bottom">
-                <td>麦烤</td>
-                <td>郭颖美</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td rowspan="2">2019级</td>
-                <td>宋星辰</td>
-                <td>宋长河</td>
-                <td>王洁</td>
-                <td>游惟雅</td>
-            </tr>
-            <tr class="border-bottom">
-                <td>蔡新宇</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
-    </div>
-</section>
-<!-- /alumni -->
-
-<!-- footer -->
-<footer>
-  <!-- footer content -->
-  <div class="footer bg-footer section border-bottom">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-5 mb-5 mb-sm-0 text-center">
-          <!-- logo -->
-          <a class="logo-footer" href="index.html"><img class="img-fluid mb-0" src="images/QRCode.png" alt="QR code"></a>
+    <div class="content">
+        <div class="text-container">
+            <h2>Alumni and Former Members</h2>
+            <h3>PhD Students</h3>
+            <ul>
+                <li class="list"><a class="text-link" href="https://scholar.google.com/citations?hl=zh-CN&user=zPj0R-8AAAAJ" target="_blank">Ruifeng Yuan</a> (2019-2023): Alibaba DAMO Academy for Discovery, Adventure, Momentum and Outlook</li>
+                <li class="list"><a class="text-link" href="https://liyongqi67.github.io" target="_blank">Yongqi Li</a> (2020-2023): The Hong Kong Polytechnic University</li>
+                <li class="list"><a class="text-link" href="https://scholar.google.com/citations?hl=zh-CN&user=URdBBQUAAAAJ" target="_blank">Yanran Li</a> (2016-2020): miHoYo</li>
+                <li class="list">Yu Lei (2015-2018): Peng Cheng Laboratory</li>
+                <li class="list"><a class="text-link" href="https://scholar.google.com/citations?hl=zh-CN&user=iRWKJDoAAAAJ" target="_blank">Zhitao Wang</a> (2015-2018): Tencent</li>
+                <li class="list"><a class="text-link" href="https://scholar.google.com/citations?user=06ITfcEAAAAJ" target="_blank">Ziqiang Cao</a> (2015-2018): Associate Professor, Soochow University, China</li>
+                <li class="list">Chengyao Chen (2013-2017): JP Morgan, Hong Kong</li>
+                <li class="list"><a class="text-link" href="https://scholar.google.com/citations?hl=zh-CN&user=0uPb8MMAAAAJ" target="_blank">Dehong Gao</a> (2010-2014): Alibaba Inc, Hangzhou, China</li>
+                <li class="list">Renxian Zhang (2009-2013): Associate Professor, Tongji University, Shanghai, China</li>
+                <li class="list">You Ouyang (2008-2011): Miaozhen Systems, Beijing, China</li>
+                <li class="list">Mingli Wu (2003-2008)</li>
+                <!-- Add more text items as needed -->
+            </ul>
+            <h3>Postdocs</h3>
+            <ul>
+                <li class="list"><a class="text-link" href="https://scholar.google.com.hk/citations?user=_6NJip0AAAAJ" target="_blank">Yang Yang</a> (2022-2024): Hong Kong Scholar</li>
+                <li class="list">Haitong Yang (2018-2020): Hong Kong Scholar</li>
+                <li class="list"><a class="text-link" href="https://scholar.google.com/citations?hl=zh-CN&user=tpXiQkYAAAAJ" target="_blank">Xu Sun</a> (2011-2013): Associate Professor, MOE Key Laboratory of Computational Linguistics, Peking University, Peking, China</li>
+                <!-- Add more text items as needed -->
+            </ul>
+            <h3>Visiting Faculties</h3>
+            <ul>
+                <li class="list"><a class="text-link" href="https://scholar.google.com/citations?user=RvBDhSwAAAAJ" target="_blank">Sujian Li</a>: MOE Key Laboratory of Computational Linguistics, Peking University, Peking, China</li>
+                <li class="list"><a class="text-link" href="https://scholar.google.com/citations?hl=zh-CN&user=intM4soAAAAJ" target="_blank">Yuexian Hou</a>: School of Computer Science and Technology, Tianjin University, Tianjin China</li>
+                <li class="list">Chunfa Yuan: Tsinghua University, Peking, China</li>
+            </ul>
+            <h3>Research Associates/Assistants</h3>
+            <ul>
+                <li class="list"><a class="text-link" href="https://thegenerality.com" target="_blank">Furu Wei</a>: Lead researcher, Natural Language Computing Group at Microsoft Research Asia, Beijing, China</li>
+                <li class="list">Guihong Cao: Microsoft Corporation, Redmond, USA</li>
+                <li class="list">Yi Hu: Researcher, Alibaba Inc, Hangzhou, China</li>
+                <li class="list"><a class="text-link" href="https://cocoxu.github.io" target="_blank">Wei Xu</a>: Assistant Professor at Georgia Institute of Technology, USA</li>
+                <li class="list">Baoli Li: Professor, Henan University of Technology, Henan China</li>
+                <li class="list"><a class="text-link" href="https://scholar.google.com/citations?hl=zh-CN&user=0XGAJmcAAAAJ" target="_blank">Maofu Liu</a>: Professor, College of Computer Science and Technology, Wuhan University of Science and Technology, China</li>
+                <li class="list">Peng Zhang: Associate Professor, School of Computer Science and Technology, Tianjin University, Tianjin, China</li>
+                <li class="list">Xiaoyan Cai: Associate Professor, College of Automation, Northwestern Polytechnical University, Xi'an, China</li>
+                <li class="list">Wenping Zhang: Lecturer at Renmin University of China</li>
+                <li class="list">Shasha Li: Assistant Professor, School of Computer, National University of Defense Technology, Changsha, China</li>
+                <li class="list">Shuk Man Wong</li>
+                <li class="list">Yaoyun Zhang</li>
+                <li class="list">Defang Cao</li>
+                <li class="list"><a class="text-link" href="https://scholar.google.com/citations?hl=en&user=R4TEq6sAAAAJ" target="_blank">Qiang Chen</a>: Tencent Inc.</li>
+                <li class="list">Qing Chen:</li>
+                <li class="list">Yu Chen: USA</li>
+                <li class="list">Wei Li</li>
+                <li class="list">Donglei Qian, Shanghai</li>
+                <li class="list">Wei Wang: Tencent</li>
+                <li class="list">Wen Ye: Baidu, Renren</li>
+                <li class="list">Ji Zhang: Baidu</li>
+                <li class="list">Chuwei Luo</li>
+                <li class="list">Xinjie Zhou</li>
+                <li class="list"><a class="text-link" href="https://www.linkedin.com/in/yun-teng-16b84815a" target="_blank">Yun Teng</a></li>
+                <li class="list"><a class="text-link" href="https://lpq29743.github.io" target="_blank">Peiqin Lin</a></li>
+            </ul>
         </div>
-        <!-- contact -->
-        <div class="col-lg-8 col-md-8 col-sm-7 mb-0">
-          <h4 class="text-lightblue mb-2">Location</h4>
-          <p class="text-white mb-4">Room 1701, Information Building, Tsinghua Campus, The University Town, Shenzhen 518055, China <br>
-            深圳市南山区西丽大学城清华校区信息大楼1701
-          </p>
-          <h4 class="text-lightblue mb-2">Follow Us</h4>
-          <p class="text-white mb-0">Scan QR code to follow us on WeChat <br>
-            扫码关注实验室微信公众号
-          </p>
-        </div>
-      </div>
     </div>
-  </div>
-  <!-- copyright -->
-  <div class="copyright py-4 bg-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-7 text-sm-left text-center">
-          <p class="mb-0">Copyright &copy;
-            <script>
-              var CurrentYear = new Date().getFullYear()
-              document.write(CurrentYear)
-            </script>,
-            im1eon @ thuhcsi</p>
+    
+    <footer>
+        <div class="footer-content">
+            <p>11 Yuk Choi Rd, Hung Hom</p>
+            <p>Copyright &copy; 2024 | NLP Group @ PolyU | All Rights Reserved</p>
         </div>
-      </div>
-    </div>
-  </div>
-</footer>
-<!-- /footer -->
-
-<!-- jQuery -->
-<script src="plugins/jQuery/jquery.min.js"></script>
-<!-- Bootstrap JS -->
-<script src="plugins/bootstrap/bootstrap.min.js"></script>
-<!-- slick slider -->
-<script src="plugins/slick/slick.min.js"></script>
-<!-- aos -->
-<script src="plugins/aos/aos.js"></script>
-<!-- venobox popup -->
-<script src="plugins/venobox/venobox.min.js"></script>
-<!-- filter -->
-<script src="plugins/filterizr/jquery.filterizr.min.js"></script>
-
-<!-- Main Script -->
-<script src="js/script.js"></script>
-
+    </footer>    
+    
 </body>
 </html>

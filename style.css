@@ -1,0 +1,255 @@
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Regular'), local('Lato-Regular'),
+    url('/fonts/Lato-Regular.woff2') format('woff2'), /* Modern Browsers */
+    url('/fonts/Lato-Regular.woff') format('woff'), /* Older Browsers */
+    url('/fonts/Lato-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Bold'), local('Lato-Bold'),
+    url('/fonts/Lato-Bold.woff2') format('woff2'), /* Modern Browsers */
+    url('/fonts/Lato-Bold.woff') format('woff'), /* Older Browsers */
+    url('/fonts/Lato-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
+    font-weight: 700;
+    font-style: normal;
+}
+
+body, button, input, textarea, select {
+    font-family: 'Lato', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative; /* This makes sure your page is relative to the viewport */
+}
+
+.header-content {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 5px 20px;
+    background-color: #fff; /* Adjust if you have a specific background color */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: adds a shadow for depth */
+}
+
+.logo {
+    height: 45px; /* Adjust based on the actual size of your logo */
+    margin-top: 5px;
+}
+
+.main-nav ul {
+    align-items: left;
+    padding-left: 0; /* Removes any padding on the left */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-nav li {
+    padding: 0 15px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #000; /* Text color is black */
+    padding: 5px 10px;
+    position: relative;
+    transition: color 0.3s; /* Smooth transition for the color */
+}
+
+/* Pseudo-element for underline effect */
+.main-nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: transparent; /* Hide the underline by default */
+    left: 0;
+    bottom: -5px; /* Position the underline below the text */
+    transition: background-color 0.3s; /* Smooth transition for the underline */
+}
+
+/* Hover effect for all links */
+.main-nav a:hover {
+    color: #9E2536; /* Text color changes to red */
+}
+
+/* Underline appears on hover */
+.main-nav a:hover::after {
+    background-color: #9E2536; /* Underline color is red */
+}
+
+/* Active link styles if needed */
+.main-nav a.active {
+    color: #9E2536; /* Black for active link */
+}
+
+.main-nav a.active::after {
+    background-color: #9E2536; /* Black underline for active link */
+}
+
+.welcome-banner {
+    background-color: #9E2536; /* Red color */
+    text-align: center;
+    padding: 40px 0;
+    margin-bottom: 20px;
+}
+
+.welcome-banner h2 {
+    font-size: 30px;
+    color: white;
+}
+
+.overview {
+    max-width: calc(4 * 200px + 3 * 20px); /* Or any other max-width or padding you prefer */
+    margin: 0 auto; /* This centers the div if it has a width less than 100% */
+    padding-top: 10px;
+}
+
+.overview h2 {
+    font-size: 24px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.overview p {
+    text-align: justify; /* This creates a clean, justified text alignment */
+    margin-bottom: 10px; /* Adds space between paragraphs */
+    line-height: 1.4; /* Increases readability */
+}
+
+.news-container {
+    max-width: calc(4 * 200px + 3 * 20px); /* If .person-container has a max-width set */
+    margin: 0 auto; /* This centers the container */
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.news-container p {
+    margin-bottom: -8px; /* Space between publication items */
+}
+
+.person-container {
+    max-width: calc(4 * 200px + 3 * 20px); /* If .person-container has a max-width set */
+    margin: 0 auto; /* This centers the container */
+    margin-top: 50px; /* Optional: adds some space below */
+}
+
+.person-container h2 {
+    margin-bottom: 10px; /* Optional: adds some space below */
+}
+
+.person-grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Create four columns of equal width */
+    gap: 20px;
+    justify-content: center; /* Center the grid items */
+    padding-top: 10px;
+    padding-bottom: 20px;
+    max-width: calc(4 * 200px + 3 * 20px); /* Adjust the width of each person card and the gap as needed */
+    margin: 0 auto; /* Center the container */
+}
+
+.person-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden; /* 防止内容溢出 */
+}
+
+.person-image {
+    width: 100%; /* 图片宽度充满卡片 */
+    height: 150px; /* 固定图片高度，确保一致性 */
+    object-fit: cover; /* 裁剪图片适应div大小 */
+}
+
+.person-card h3{
+    padding: 5px;
+    text-align: center;
+}
+
+.person-card p {
+    padding: 1px;
+    text-align: center;
+}
+
+.text-container {
+    max-width: calc(4 * 200px + 3 * 20px); /* If .person-container has a max-width set */
+    margin: 0 auto; /* This centers the container */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.text-link {
+    color: #9E2536;         /* Sets the hyperlink text color to red */
+    text-decoration: none; /* Removes the underline from hyperlinks */
+}
+
+.text-link:hover {
+text-decoration: underline; /* Optionally add underline on hover */
+}
+
+.list {
+    padding: 2px 0px;
+}
+
+.publications {
+    max-width: calc(4 * 200px + 3 * 20px); /* If .person-container has a max-width set */
+    margin: 0 auto; /* This centers the container */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.publication-item {
+    /* Styles for each publication */
+    position: relative;
+    padding-left: 40px; /* Adjust padding to make space for bullet */
+    margin-bottom: 30px; /* Space between publication items */
+}
+
+.publication-item p {
+    margin-bottom: -10px; /* Space between publication items */
+}
+
+.publication-bullet::before {
+    /* Create the custom bullet point */
+    content: '';
+    position: absolute;
+    left: 3%;
+    top: 8%;
+    transform: translateY(-50%);
+    width: 6px; /* Bullet width */
+    height: 6px; /* Bullet height */
+    background-color: #000; /* Bullet color */
+    border-radius: 50%; /* Make it round */
+}
+
+.publication-link {
+    /* Style for the arXiv link */
+    color: #9E2536;
+    text-decoration: none;
+}
+
+footer {
+    background-color: rgba(88, 89, 91, 0.95);
+    color: #BBBCBD;
+    text-align: center;
+    padding: 8px 0;
+    position: relative; /* Change from fixed to relative */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content p {
+    margin: 5px 0;
+    font-size: 12px; /* Smaller font size; adjust as needed */
+}
