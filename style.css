@@ -237,6 +237,50 @@ text-decoration: underline; /* Optionally add underline on hover */
     text-decoration: none;
 }
 
+.tag_conference {
+    display: inline-block;
+    background-color: #ea5455;
+    color: white;
+    padding: 0.2em 0.6em;
+    font-size: 0.875em;
+    border-radius: 0.2em;
+    font-weight: bold;
+    margin-right: 0.5em;
+}
+
+.tag_book {
+    display: inline-block;
+    background-color: #ffd460;
+    color: white;
+    padding: 0.2em 0.6em;
+    font-size: 0.875em;
+    border-radius: 0.2em;
+    font-weight: bold;
+    margin-right: 0.5em;
+}
+
+.tag_journal {
+    display: inline-block;
+    background-color: #f07b3f;
+    color: white;
+    padding: 0.2em 0.6em;
+    font-size: 0.875em;
+    border-radius: 0.2em;
+    font-weight: bold;
+    margin-right: 0.5em;
+}
+
+.tag_others {
+    display: inline-block;
+    background-color: #2d4059;
+    color: white;
+    padding: 0.2em 0.6em;
+    font-size: 0.875em;
+    border-radius: 0.2em;
+    font-weight: bold;
+    margin-right: 0.5em;
+}
+
 footer {
     background-color: rgba(88, 89, 91, 0.95);
     color: #BBBCBD;
