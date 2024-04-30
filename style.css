@@ -161,7 +161,12 @@ html, body {
 .person-card {
     border: 1px solid #ccc;
     border-radius: 10px;
+    transition: box-shadow 0.2s ease-in-out; /* Adjusted duration and timing function */
     overflow: hidden; /* 防止内容溢出 */
+}
+
+.person-card:hover {
+    box-shadow: 0 0 20px 10px rgba(160, 157, 157, 0.3); /* Orange glow */
 }
 
 .person-image {
