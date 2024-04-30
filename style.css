@@ -223,7 +223,7 @@ text-decoration: underline; /* Optionally add underline on hover */
     content: '';
     position: absolute;
     left: 3%;
-    top: 8%;
+    top: 10%;
     transform: translateY(-50%);
     width: 6px; /* Bullet width */
     height: 6px; /* Bullet height */
