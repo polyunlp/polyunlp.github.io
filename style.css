@@ -159,7 +159,7 @@ html, body {
 }
 
 .person-card {
-    border: 1px solid #ccc;
+    border: 1px solid #eaeaea;
     border-radius: 10px;
     transition: box-shadow 0.2s ease-in-out; /* Adjusted duration and timing function */
     overflow: hidden; /* 防止内容溢出 */
